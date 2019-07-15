@@ -50,6 +50,38 @@ class StringTests: XCTestCase {
     XCTAssertFalse("AB3".isUppercased)
   }
 
+  func testContainsUppercaseSuccessful() {
+    XCTAssertTrue("ABC".containsUppercase)
+  }
+
+  func testContainsUppercaseSuccessfulAtLeastOneUppercase() {
+    XCTAssertTrue("abcD".containsUppercase)
+  }
+
+  func testContainsUppercaseFailureForAllLowercase() {
+    XCTAssertFalse("abcd".containsUppercase)
+  }
+
+  func testContainsUppercaseFailureForAllNumber() {
+    XCTAssertFalse("1233".containsUppercase)
+  }
+
+  func testContainsLowercaseSuccessful() {
+    XCTAssertTrue("abc".containsLowercase)
+  }
+
+  func testContainsLowercaseSuccessfulAtLeastOneLowercase() {
+    XCTAssertTrue("ABcD".containsLowercase)
+  }
+
+  func testContainsLowercaseFailureForAllLowercase() {
+    XCTAssertFalse("ABCD".containsLowercase)
+  }
+
+  func testContainsLowercaseFailureForAllNumber() {
+    XCTAssertFalse("1233".containsLowercase)
+  }
+
   func testRandomStringCorrectLength() {
     let randomString = String.random(length: 3)
     XCTAssertEqual(randomString.count, 3)
