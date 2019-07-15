@@ -92,17 +92,22 @@ public extension String {
     return randomString
   }
 
-  /**
-   Returns the character at a given index, casted as a string.
-   If distance is positive, this is the same value as the result of distance calls to index(after:).
-   If distance is negative, this is the same value as the result of abs(distance) calls to index(before:).
-   Use `safe` to return an optional but avoid a fatal crash.
-   */
+  /// Returns the character at a given index, casted as a string.
+  /// If distance is positive, this is the same value as the result of distance calls to index(after:).
+  /// If distance is negative, this is the same value as the result of abs(distance) calls to index(before:).
+  ///
+  /// - Parameter idx: The index where to subscript.
   subscript(idx: Int) -> String {
     if idx >= 0 { return String(self[index(startIndex, offsetBy: idx)]) }
     else { return String(self[index(endIndex, offsetBy: idx)]) }
   }
 
+
+  /// Returns the character at a given index, casted as a string if found, otherwise nil.
+  /// If distance is positive, this is the same value as the result of distance calls to index(after:).
+  /// If distance is negative, this is the same value as the result of abs(distance) calls to index(before:).
+  ///
+  /// - Parameter idx: The index where to subscript.
   subscript(safe idx: Int) -> String? {
     guard self.count > abs(idx) else { return nil }
 

@@ -32,12 +32,14 @@ open class SKButton: UIButton {
   }
 
   // MARK: - init
-  
+
+  /// `init` via code.
   public override init(frame: CGRect) {
     super.init(frame: frame)
     self.style()
   }
 
+  /// `init` via IB.
   public required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
     self.style()

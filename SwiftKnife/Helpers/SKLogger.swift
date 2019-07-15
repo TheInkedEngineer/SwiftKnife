@@ -6,6 +6,7 @@
 
 import Foundation
 
+/// A cosole logger.
 public enum SKLogger {
   /// Logs to the console a properly formatted debug message.
   ///

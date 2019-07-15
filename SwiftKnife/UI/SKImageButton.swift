@@ -42,12 +42,14 @@ open class ImageButton: UIButton {
   }
 
   // MARK: - init
-  
+
+  /// `init` via code.
   public override init(frame: CGRect) {
     super.init(frame: frame)
     self.setup()
   }
 
+  /// `init` via IB.
   public required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
     self.setup()

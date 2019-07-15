@@ -6,6 +6,7 @@
 
 import UIKit
 
+/// An image based checkbox.
 open class Checkbox: UIControl {
 
   // MARK: - properties
@@ -74,12 +75,14 @@ open class Checkbox: UIControl {
 
   // MARK: - init
 
+  /// `init` via code.
   public override init(frame: CGRect) {
     super.init(frame: frame)
     self.setup()
     self.update()
   }
 
+  /// `init` via IB.
   public required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
     self.setup()
@@ -96,10 +99,12 @@ open class Checkbox: UIControl {
     self.checkboxImage.image = self.imageToDisplay
   }
 
+  /// Layout the image inside the button.
   open override func layoutSubviews() {
     self.checkboxImage.frame = self.bounds
   }
 
+  /// A responder to when a touch interaction starts.
   open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     // check if the change should take place.
     // if the closure is not assigned, proceed.
