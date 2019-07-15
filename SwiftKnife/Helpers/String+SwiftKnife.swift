@@ -101,7 +101,11 @@ public extension String {
 
     return randomString
   }
+}
 
+// MARK: - Subscripts
+
+extension String {
   /// Returns the character at a given index, casted as a string.
   /// If distance is positive, this is the same value as the result of distance calls to index(after:).
   /// If distance is negative, this is the same value as the result of abs(distance) calls to index(before:).
@@ -139,8 +143,10 @@ public extension String {
   ///
   /// - Parameter idx: The index where to subscript.
   subscript(safe idx: Int) -> Character? {
-    guard self.count > abs(idx) else { return nil }
-    return self[idx]
+    guard let found: String = self[safe: idx] else {
+      return nil
+    }
+    return Character(found)
   }
 
   /// Returns a substring from the lower bound of the range up to but not including the upper bound.
@@ -239,4 +245,5 @@ public extension String {
 
     return String(self[..<end])
   }
+
 }
