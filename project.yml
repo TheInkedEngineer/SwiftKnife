@@ -1,0 +1,59 @@
+name: SwiftKnife
+
+options:
+  minimumXcodeGenVersion: "2.5.0"
+  bundleIdPrefix: com.theInkedEngineer
+  indentWidth: 2
+  xcodeVersion: 10.2.1
+  deploymentTarget:
+    iOS: "11.0"
+  generateEmptyDirectories: true
+  
+targets:
+  SwiftKnife:
+    type: framework
+    platform: iOS
+    attributes:
+      ProvisioningStyle: Automatic
+    sources: [SwiftKnife]
+    settings:
+      INFOPLIST_FILE: SwiftKnife/Resources/Info.plist
+      ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES: $(inherited)
+      CURRENT_PROJECT_VERSION: 1.0
+
+  SwiftKnifeTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: SwiftKnifeTests
+    dependencies:
+      - target: SwiftKnife
+    settings:
+      INFOPLIST_FILE: SwiftKnifeTests/Resources/Info.plist
+
+schemes:
+  Developement:
+      build:
+        targets:
+          SwiftKnife: all
+          SwiftKnifeTests: [test]
+      test:
+        gatherCoverageData: true
+        randomExecutionOrder: false
+        targets: [SwiftKnifeTests]
+      archive:
+        customArchiveName: SwiftKnife_Development
+        revealArchiveInOrganizer: false
+
+  Production:
+      build:
+        targets:
+          SwiftKnife: all
+          SwiftKnifeTests: [test]
+      test:
+        gatherCoverageData: true
+        randomExecutionOrder: false
+        targets: [SwiftKnifeTests]
+      archive:
+        customArchiveName: SwiftKnife
+        revealArchiveInOrganizer: false
