@@ -26,10 +26,20 @@ public extension String {
     return !self.contains { String($0).isDigits == true || String($0) != $0.lowercased() }
   }
 
+  /// The string contains at least one lowecase character.
+  var containsLowercase: Bool {
+    return !isDigits && !isUppercased
+  }
+
   /// Checks if a string is made of only uppercase charaters.
   var isUppercased: Bool {
     guard !self.isEmpty else { return false }
     return !self.contains { String($0).isDigits == true || String($0) != $0.uppercased() }
+  }
+
+  /// The string contains at least one uppercase character.
+  var containsUppercase: Bool {
+    return !isDigits && !isLowercased
   }
 
   /// Returns a `String` of random numbers.
@@ -83,7 +93,7 @@ public extension String {
     let allowedCharsCount = UInt32(allowedCharacters.count)
     var randomString = ""
 
-    for _ in 0..<length {
+    (0..<length).forEach { _ in
       let index = Int(arc4random_uniform(allowedCharsCount))
       let newCharacter: String = allowedCharacters[index]
       randomString += String(newCharacter)
@@ -110,9 +120,7 @@ public extension String {
   /// - Parameter idx: The index where to subscript.
   subscript(safe idx: Int) -> String? {
     guard self.count > abs(idx) else { return nil }
-
-    if idx >= 0 { return String(self[index(startIndex, offsetBy: idx)]) }
-    else { return String(self[index(endIndex, offsetBy: idx)]) }
+    return self[idx]
   }
 
   /// Returns the character at a given index.
@@ -132,9 +140,7 @@ public extension String {
   /// - Parameter idx: The index where to subscript.
   subscript(safe idx: Int) -> Character? {
     guard self.count > abs(idx) else { return nil }
-
-    if idx >= 0 { return self[index(startIndex, offsetBy: idx)] }
-    else { return self[index(endIndex, offsetBy: idx)] }
+    return self[idx]
   }
 
   /// Returns a substring from the lower bound of the range up to but not including the upper bound.

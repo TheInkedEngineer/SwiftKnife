@@ -21,8 +21,7 @@ public extension Date {
 
   /// Checks if the date is from the future.
   var isDayFromFuture: Bool {
-    let today = Calendar.current.startOfDay(for: Date())
-    return self.timeIntervalSince(today) > 0
+    return !self.isToday && !self.isDayFromPast
   }
 
   /// Returns the short (3 letters) or full version name of the month from a given date.
