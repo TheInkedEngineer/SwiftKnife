@@ -68,27 +68,17 @@ public extension String {
     additionalCharacters: String = ""
     ) -> String {
 
-    if !includeLowercaseLetters && !includeCapitalLetters && !includeDigits && additionalCharacters.isEmpty {
-      return ""
-    }
+    if !includeLowercaseLetters && !includeCapitalLetters && !includeDigits && additionalCharacters.isEmpty { return "" }
 
     var allowedCharacters = ""
 
-    if includeLowercaseLetters {
-      allowedCharacters += "abcdefghijklmnopqrstuvwxyz"
-    }
+    if includeLowercaseLetters { allowedCharacters += "abcdefghijklmnopqrstuvwxyz" }
 
-    if includeCapitalLetters {
-      allowedCharacters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    }
+    if includeCapitalLetters { allowedCharacters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ" }
 
-    if includeDigits {
-      allowedCharacters += "0123456789"
-    }
+    if includeDigits { allowedCharacters += "0123456789" }
 
-    if !additionalCharacters.isEmpty {
-      allowedCharacters += additionalCharacters
-    }
+    if !additionalCharacters.isEmpty { allowedCharacters += additionalCharacters }
 
     let allowedCharsCount = UInt32(allowedCharacters.count)
     var randomString = ""
