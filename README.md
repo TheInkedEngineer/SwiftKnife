@@ -2,6 +2,25 @@
 
 This repository contains a collection of helpers and extensions that I use in my personal Swift projects to make my life easier. 
 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+![SwiftLang badge](https://img.shields.io/badge/language-Swift%205.0-orange.svg)
+![Platform](https://img.shields.io/cocoapods/p/SwiftKnife.svg)
+[![codebeat badge](https://codebeat.co/badges/93a3c652-416d-40fc-835e-3d53b945e1d1)](https://codebeat.co/projects/github-com-theinkedengineer-swiftknife-master)
+![License](https://img.shields.io/github/license/theinkedengineer/SwiftKnife.svg)
+[![Twitter](https://img.shields.io/twitter/url/https/theinkedgineer.svg?label=TheInkedgineer&style=social)]("https://twitter.com/theinkedgineer)
+
+# Installation
+
+## Cocoapods
+
+Add the following line to your Podfile
+` pod 'SwiftKnife' ~> '1.0' `
+
+
+# Contribution
+
+**Working on your first Pull Request?** You can learn how from this *free* series [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
+
 ## Generate the project
 You might notice the abscence of the `.xcodeproj` file. That is because I rely on [xcodegen](https://github.com/yonaskolb/XcodeGen) to generate the project correctly. It is a great tool to customize a project and generate it on the go.
 
