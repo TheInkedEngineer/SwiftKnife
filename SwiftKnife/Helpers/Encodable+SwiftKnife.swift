@@ -15,6 +15,6 @@ public extension Encodable {
     let encodedData = try? encoder.encode(self)
     guard let data = encodedData else { return nil }
     let jsonObject = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any]
-    return jsonObject.map { $0 }
+    return jsonObject.flatMap { $0 }
   }
 }
