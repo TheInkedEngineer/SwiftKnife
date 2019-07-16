@@ -2,12 +2,17 @@
 
 This repository contains a collection of helpers and extensions that I use in my personal Swift projects to make my life easier. 
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+![Documentation](https://raw.githubusercontent.com/TheInkedEngineer/SwiftKnife/3e91063e7fca8740140d873aba53f0e92e696833/docs/1.0/badge.svg)
+
+![PodVersion](https://img.shields.io/cocoapods/v/SwiftKnife.svg)
 ![SwiftLang badge](https://img.shields.io/badge/language-Swift%205.0-orange.svg)
 ![Platform](https://img.shields.io/cocoapods/p/SwiftKnife.svg)
+
 [![codebeat badge](https://codebeat.co/badges/93a3c652-416d-40fc-835e-3d53b945e1d1)](https://codebeat.co/projects/github-com-theinkedengineer-swiftknife-master)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 ![License](https://img.shields.io/github/license/theinkedengineer/SwiftKnife.svg)
-[![Twitter](https://img.shields.io/twitter/url/https/theinkedgineer.svg?label=TheInkedgineer&style=social)]("https://twitter.com/theinkedgineer)
+
+[![Twitter](https://img.shields.io/twitter/url/https/theinkedgineer.svg?label=TheInkedgineer&style=social)](https://twitter.com/theinkedgineer)
 
 # Installation
 
