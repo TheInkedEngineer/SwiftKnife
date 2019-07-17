@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>String Extension Reference</title>
+    <title>SKImageButton Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Extension/String" class="dashAnchor"></a>
-    <a title="String Extension Reference"></a>
+    <a name="//apple_ref/swift/Class/SKImageButton" class="dashAnchor"></a>
+    <a title="SKImageButton Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">SwiftKnife 1.1 Docs</a> (100% documented)</p>
@@ -22,7 +22,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">SwiftKnife Reference</a>
         <img id="carat" src="../img/carat.png" />
-        String Extension Reference
+        SKImageButton Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -104,24 +104,32 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>String</h1>
+            <h1>SKImageButton</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">extension</span> <span class="kt">String</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">SKImageButton</span> <span class="p">:</span> <span class="kt">UIButton</span></code></pre>
 
                 </div>
               </div>
-            
+            <p><code>SKImageButton</code> is s subclass of <code>UIButton</code> where different states have the same image with a different customizable opacity.</p>
+
           </section>
           <section class="section task-group-section">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/properties"></a>
+                <a name="//apple_ref/swift/Section/properties" class="dashAnchor"></a>
+                <a href="#/properties">
+                  <h3 class="section-name">properties</h3>
+                </a>
+              </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:SS10SwiftKnifeE13isCapitalizedSbvp"></a>
-                    <a name="//apple_ref/swift/Property/isCapitalized" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SS10SwiftKnifeE13isCapitalizedSbvp">isCapitalized</a>
+                    <a name="/s:10SwiftKnife13SKImageButtonC5imageSo7UIImageCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/image" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftKnife13SKImageButtonC5imageSo7UIImageCSgvp">image</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -129,19 +137,20 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Checks if the string starts with a capital letter.</p>
+                        <p>The image to use for the button.
+Different state will use this image, with different assigned opacities.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isCapitalized</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">image</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/TheInkedEngineer/blob/master/SwiftKnife/Helpers/String+SwiftKnife.swift#L11-L15">Show on GitHub</a>
+                        <a href="https://github.com/TheInkedEngineer/blob/master/SwiftKnife/UI/SKImageButton.swift#L25-L27">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -149,9 +158,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:SS10SwiftKnifeE8isDigitsSbvp"></a>
-                    <a name="//apple_ref/swift/Property/isDigits" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SS10SwiftKnifeE8isDigitsSbvp">isDigits</a>
+                    <a name="/c:@M@SwiftKnife@objc(cs)SKImageButton(py)highlighted"></a>
+                    <a name="//apple_ref/swift/Property/isHighlighted" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SwiftKnife@objc(cs)SKImageButton(py)highlighted">isHighlighted</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -159,19 +168,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Checks if a string is made of only digits.</p>
+                        <p>Overriding the original method to update the button background when the button is highlighted.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isDigits</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">override</span> <span class="k">var</span> <span class="nv">isHighlighted</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/TheInkedEngineer/blob/master/SwiftKnife/Helpers/String+SwiftKnife.swift#L18-L21">Show on GitHub</a>
+                        <a href="https://github.com/TheInkedEngineer/blob/master/SwiftKnife/UI/SKImageButton.swift#L30-L32">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -179,9 +188,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:SS10SwiftKnifeE12isLowercasedSbvp"></a>
-                    <a name="//apple_ref/swift/Property/isLowercased" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SS10SwiftKnifeE12isLowercasedSbvp">isLowercased</a>
+                    <a name="/c:@M@SwiftKnife@objc(cs)SKImageButton(py)enabled"></a>
+                    <a name="//apple_ref/swift/Property/isEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SwiftKnife@objc(cs)SKImageButton(py)enabled">isEnabled</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -189,19 +198,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Checks if a string is made of only lowercase charaters.</p>
+                        <p>Overriding the original method to update the button background when the button is enabled.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isLowercased</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">override</span> <span class="k">var</span> <span class="nv">isEnabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/TheInkedEngineer/blob/master/SwiftKnife/Helpers/String+SwiftKnife.swift#L24-L27">Show on GitHub</a>
+                        <a href="https://github.com/TheInkedEngineer/blob/master/SwiftKnife/UI/SKImageButton.swift#L35-L37">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -209,9 +218,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:SS10SwiftKnifeE17containsLowercaseSbvp"></a>
-                    <a name="//apple_ref/swift/Property/containsLowercase" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SS10SwiftKnifeE17containsLowercaseSbvp">containsLowercase</a>
+                    <a name="/c:@M@SwiftKnife@objc(cs)SKImageButton(py)selected"></a>
+                    <a name="//apple_ref/swift/Property/isSelected" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SwiftKnife@objc(cs)SKImageButton(py)selected">isSelected</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -219,19 +228,60 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The string contains at least one lowecase character.</p>
+                        <p>Overriding the original method to update the button background when the button is selected.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">containsLowercase</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">override</span> <span class="k">var</span> <span class="nv">isSelected</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/TheInkedEngineer/blob/master/SwiftKnife/Helpers/String+SwiftKnife.swift#L30-L32">Show on GitHub</a>
+                        <a href="https://github.com/TheInkedEngineer/blob/master/SwiftKnife/UI/SKImageButton.swift#L40-L42">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/init"></a>
+                <a name="//apple_ref/swift/Section/init" class="dashAnchor"></a>
+                <a href="#/init">
+                  <h3 class="section-name">init</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SwiftKnife@objc(cs)SKImageButton(im)initWithFrame:"></a>
+                    <a name="//apple_ref/swift/Method/init(frame:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SwiftKnife@objc(cs)SKImageButton(im)initWithFrame:">init(frame:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>init</code> via code.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="nf">init</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/TheInkedEngineer/blob/master/SwiftKnife/UI/SKImageButton.swift#L47-L50">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -239,9 +289,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:SS10SwiftKnifeE12isUppercasedSbvp"></a>
-                    <a name="//apple_ref/swift/Property/isUppercased" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SS10SwiftKnifeE12isUppercasedSbvp">isUppercased</a>
+                    <a name="/c:@M@SwiftKnife@objc(cs)SKImageButton(im)initWithCoder:"></a>
+                    <a name="//apple_ref/swift/Method/init(coder:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SwiftKnife@objc(cs)SKImageButton(im)initWithCoder:">init(coder:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -249,29 +299,40 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Checks if a string is made of only uppercase charaters.</p>
+                        <p><code>init</code> via IB.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isUppercased</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">required</span> <span class="nf">init</span><span class="p">?(</span><span class="n">coder</span> <span class="nv">aDecoder</span><span class="p">:</span> <span class="kt">NSCoder</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/TheInkedEngineer/blob/master/SwiftKnife/Helpers/String+SwiftKnife.swift#L35-L38">Show on GitHub</a>
+                        <a href="https://github.com/TheInkedEngineer/blob/master/SwiftKnife/UI/SKImageButton.swift#L53-L56">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Public Methods" class="dashAnchor"></a>
+                <a href="#/Public%20Methods">
+                  <h3 class="section-name">Public Methods</h3>
+                </a>
+              </div>
+              <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:SS10SwiftKnifeE17containsUppercaseSbvp"></a>
-                    <a name="//apple_ref/swift/Property/containsUppercase" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SS10SwiftKnifeE17containsUppercaseSbvp">containsUppercase</a>
+                    <a name="/s:10SwiftKnife13SKImageButtonC10setOpacity_3fory12CoreGraphics7CGFloatV_So14UIControlStateVtF"></a>
+                    <a name="//apple_ref/swift/Method/setOpacity(_:for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftKnife13SKImageButtonC10setOpacity_3fory12CoreGraphics7CGFloatV_So14UIControlStateVtF">setOpacity(_:for:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -279,44 +340,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The string contains at least one uppercase character.</p>
+                        <p>Sets the opacity of a given state.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">containsUppercase</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/TheInkedEngineer/blob/master/SwiftKnife/Helpers/String+SwiftKnife.swift#L41-L43">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:SS10SwiftKnifeE12randomDigits6lengthSSSi_tFZ"></a>
-                    <a name="//apple_ref/swift/Method/randomDigits(length:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SS10SwiftKnifeE12randomDigits6lengthSSSi_tFZ">randomDigits(length:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Returns a <code>String</code> of random numbers.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">randomDigits</span><span class="p">(</span><span class="nv">length</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setOpacity</span><span class="p">(</span><span class="n">_</span> <span class="nv">opacity</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="k">for</span> <span class="nv">state</span><span class="p">:</span> <span class="kt">UIControl</span><span class="o">.</span><span class="kt">State</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -327,24 +358,32 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>length</em>
+                                <em>opacity</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>The desired length of the string.</p>
+                                  <p>The desired opacity.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>state</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The button state to modify.</p>
                                 </div>
                               </td>
                             </tr>
                           </tbody>
                         </table>
                       </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>A string long as the desired length made of random digits.</p>
-                      </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/TheInkedEngineer/blob/master/SwiftKnife/Helpers/String+SwiftKnife.swift#L49-L51">Show on GitHub</a>
+                        <a href="https://github.com/TheInkedEngineer/blob/master/SwiftKnife/UI/SKImageButton.swift#L76-L79">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -352,9 +391,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:SS10SwiftKnifeE6random6length23includeLowercaseLetters0e7CapitalG00E6Digits20additionalCharactersSSSi_S3bSStFZ"></a>
-                    <a name="//apple_ref/swift/Method/random(length:includeLowercaseLetters:includeCapitalLetters:includeDigits:additionalCharacters:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SS10SwiftKnifeE6random6length23includeLowercaseLetters0e7CapitalG00E6Digits20additionalCharactersSSSi_S3bSStFZ">random(length:includeLowercaseLetters:includeCapitalLetters:includeDigits:additionalCharacters:)</a>
+                    <a name="/s:10SwiftKnife13SKImageButtonC10getOpacity3for12CoreGraphics7CGFloatVSgSo14UIControlStateV_tF"></a>
+                    <a name="//apple_ref/swift/Method/getOpacity(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftKnife13SKImageButtonC10getOpacity3for12CoreGraphics7CGFloatVSgSo14UIControlStateV_tF">getOpacity(for:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -362,20 +401,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a string</p>
+                        <p>Checks the opacity of a given state.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">random</span><span class="p">(</span>
-  <span class="nv">length</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
-  <span class="nv">includeLowercaseLetters</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
-  <span class="nv">includeCapitalLetters</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
-  <span class="nv">includeDigits</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
-  <span class="nv">additionalCharacters</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span>
-  <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getOpacity</span><span class="p">(</span><span class="k">for</span> <span class="nv">state</span><span class="p">:</span> <span class="kt">UIControl</span><span class="o">.</span><span class="kt">State</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGFloat</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -386,60 +419,12 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>length</em>
+                                <em>state</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>The desired length of the string.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>includeLowercaseLetters</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>If true, includes <q>abcdefghijklmnopqrstuvwxyz</q> in allowed characters.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>includeCapitalLetters</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>If true, includes <q>ABCDEFGHIJKLMNOPQRSTUVWXYZ</q> in allowed characters.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>includeDigits</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>If true, includes <q>0123456789</q> in allowed characters.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>additionalCharacters</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>A list of aditional characters to include.</p>
+                                  <p>The button state.</p>
                                 </div>
                               </td>
                             </tr>
@@ -448,11 +433,64 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>A <code>String</code> as long as the desired length, made of the allowed characters.
-       If no character type is allowed, and no additionalCharacters are passed, returns an empty string.</p>
+                        <p>The opacity of that state if assigned, otherwise nil.</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/TheInkedEngineer/blob/master/SwiftKnife/Helpers/String+SwiftKnife.swift#L63-L93">Show on GitHub</a>
+                        <a href="https://github.com/TheInkedEngineer/blob/master/SwiftKnife/UI/SKImageButton.swift#L85-L87">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftKnife13SKImageButtonC7opacity3for12CoreGraphics7CGFloatVSo14UIControlStateV_tF"></a>
+                    <a name="//apple_ref/swift/Method/opacity(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftKnife13SKImageButtonC7opacity3for12CoreGraphics7CGFloatVSo14UIControlStateV_tF">opacity(for:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The opacity of a given state. This does not reflect the opacity assigned to that state,
+but rather the opacity that will show up, since if no opacity is assigned it fallsback to <code>.normal</code> state.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">opacity</span><span class="p">(</span><span class="k">for</span> <span class="nv">state</span><span class="p">:</span> <span class="kt">UIControl</span><span class="o">.</span><span class="kt">State</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGFloat</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>state</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The state of the button.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The opacity that will appear given that state.</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/TheInkedEngineer/blob/master/SwiftKnife/UI/SKImageButton.swift#L94-L96">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

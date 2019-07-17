@@ -1,12 +1,6 @@
 {
   "warnings": [
-    {
-      "file": "/Users/theinkedengineer/Code/projects/SwiftKnife/SwiftKnife/UI/SKInvisibleTextField.swift",
-      "line": 51,
-      "symbol": "SKInvisibleTextField.deleteBackward()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    }
+
   ],
   "source_directory": "/Users/theinkedengineer/Code/projects/SwiftKnife"
 }
