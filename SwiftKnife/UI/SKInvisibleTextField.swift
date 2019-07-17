@@ -12,12 +12,14 @@ public class SKInvisibleTextField: UITextField {
 
   // MARK: - init
 
+  /// `init` via code.
   public override init(frame: CGRect) {
     super.init(frame: frame)
 
     self.style()
   }
 
+  /// `init` via IB.
   public required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
 
@@ -46,7 +48,9 @@ public class SKInvisibleTextField: UITextField {
     return super.canPerformAction(action, withSender: sender)
   }
 
-  public override func deleteBackward() {
+  /// Delete a character from the displayed text.
+  /// Invokes the delegate even when textField is empty and the delete button is pressed.
+  override public func deleteBackward() {
     super.deleteBackward()
 
     // a workaround to invoke the delegate
