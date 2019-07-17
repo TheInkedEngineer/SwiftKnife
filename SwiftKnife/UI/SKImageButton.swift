@@ -8,7 +8,7 @@ import Foundation
 import UIKit
 
 /// `SKImageButton` is s subclass of `UIButton` where different states have the same image with a different customizable opacity.
-open class ImageButton: UIButton {
+open class SKImageButton: UIButton {
 
   // MARK: - properties
 

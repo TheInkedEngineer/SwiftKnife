@@ -7,7 +7,7 @@
 import UIKit
 
 /// An image based checkbox.
-open class Checkbox: UIControl {
+open class SKCheckbox: UIControl {
 
   // MARK: - properties
 
