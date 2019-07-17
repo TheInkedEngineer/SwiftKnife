@@ -7,6 +7,9 @@
 import Foundation
 
 public extension String {
+
+  // MARK:- Variables
+
   /// Checks if the string starts with a capital letter.
   var isCapitalized: Bool {
     guard !self.isEmpty else { return false }
@@ -41,6 +44,8 @@ public extension String {
   var containsUppercase: Bool {
     return !isDigits && !isLowercased
   }
+
+  // MARK:- Functions
 
   /// Returns a `String` of random numbers.
   ///
