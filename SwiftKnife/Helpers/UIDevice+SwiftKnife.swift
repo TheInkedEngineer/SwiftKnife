@@ -176,6 +176,8 @@ public extension UIDevice {
     return identifier
   }
 
+  // codebeat:disable[LOC]
+
   /// The current platform of the device/simulator
   var platformName: PlatformName {
     let platform = self.platform
@@ -329,4 +331,6 @@ public extension UIDevice {
       return .notAvailable
     }
   }
+
+  // codebeat:enable[LOC]
 }
