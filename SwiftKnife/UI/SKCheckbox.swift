@@ -63,15 +63,15 @@ open class SKCheckbox: UIControl {
   /// An closure that allows the user to add a condition to whether or not the checkbox value should change.
   /// If it returns true, the tracking continues, the checkbox switches state.
   /// If it returns false, the value of the checkbox does not change.
-  public var valueShouldChange: ((_ checkbox: Checkbox, _ newValue: Bool) -> (Bool))?
+  public var valueShouldChange: ((_ checkbox: SKCheckbox, _ newValue: Bool) -> (Bool))?
 
   /// An interaction that is called right before the checkbox switches state.
   /// Use it to execute any pre change operations.
-  public var valueWillChange: ((_ checkbox: Checkbox, _ oldValue: Bool) -> Void)?
+  public var valueWillChange: ((_ checkbox: SKCheckbox, _ oldValue: Bool) -> Void)?
 
   /// An interaction that is called right after the checkbox switches state.
   /// Use it to execute any post change operations.
-  public var valueDidChange: ((_ checkbox: Checkbox, _ oldValue: Bool) -> Void)?
+  public var valueDidChange: ((_ checkbox: SKCheckbox, _ oldValue: Bool) -> Void)?
 
   // MARK: - init
 
