@@ -15,7 +15,7 @@
 # 1. Requirements and Compatibility
 | Swift           | SwiftKnife      | iOS     |
 |-----------------|-----------------|---------|
-| 4.2 ... 5.0     | 1.0 ... 1.1     | 10+     |
+| 4.2 ... 5.0     | 1.0 ... 1.1.x   | 10+     |
 
 # 2. Installation
 
