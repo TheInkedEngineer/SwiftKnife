@@ -176,7 +176,7 @@ public extension UIDevice {
     return identifier
   }
 
-  // codebeat:disable[LOC]
+  // codebeat:disable[LOC,CYCLO,ABC]
 
   /// The current platform of the device/simulator
   var platformName: PlatformName {
@@ -332,5 +332,5 @@ public extension UIDevice {
     }
   }
 
-  // codebeat:enable[LOC]
+  // codebeat:enable[LOC,CYCLO,ABC]
 }
