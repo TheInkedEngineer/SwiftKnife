@@ -1,9 +1,8 @@
 # SwiftKnife
 
-This repository contains a collection of helpers and extensions that I use in my personal Swift projects to make my life easier. 
+`SwiftKnife` is a collection of extension, classes, structs and UI elements to help you code faster.
 
-![Documentation](https://raw.githubusercontent.com/TheInkedEngineer/SwiftKnife/3e91063e7fca8740140d873aba53f0e92e696833/docs/1.0/badge.svg)
-
+![Documentation](https://theinkedengineer.github.io/SwiftKnife/docs/1.0/badge.svg)
 ![PodVersion](https://img.shields.io/cocoapods/v/SwiftKnife.svg)
 ![SwiftLang badge](https://img.shields.io/badge/language-Swift%205.0-orange.svg)
 ![Platform](https://img.shields.io/cocoapods/p/SwiftKnife.svg)
@@ -11,18 +10,25 @@ This repository contains a collection of helpers and extensions that I use in my
 [![codebeat badge](https://codebeat.co/badges/93a3c652-416d-40fc-835e-3d53b945e1d1)](https://codebeat.co/projects/github-com-theinkedengineer-swiftknife-master)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 ![License](https://img.shields.io/github/license/theinkedengineer/SwiftKnife.svg)
-
 [![Twitter](https://img.shields.io/twitter/url/https/theinkedgineer.svg?label=TheInkedgineer&style=social)](https://twitter.com/theinkedgineer)
 
-# Installation
+# 1. Requirements and Compatibility
+| Swift           | SwiftKnife      | iOS     |
+|-----------------|-----------------|---------|
+| 4.2 ... 5.0     | 1.0 ... 1.1     | 10+     |
+
+# 2. Installation
 
 ## Cocoapods
 
 Add the following line to your Podfile
-` pod 'SwiftKnife' ~> '1.0' `
+` pod 'SwiftKnife' ~> '1.1' `
 
 
-# Contribution
+# 3. Documentation
+`SwiftKnife` is fully documented. Checkout the documentation [**here**](https://theinkedengineer.github.io/SwiftKnife/1.1/index.html).
+
+# 4. Contribution
 
 **Working on your first Pull Request?** You can learn how from this *free* series [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
 

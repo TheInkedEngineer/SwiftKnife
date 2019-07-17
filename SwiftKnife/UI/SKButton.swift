@@ -62,7 +62,7 @@ open class SKButton: UIButton {
     self.backgroundColor = self.stateColor[self.state] ?? self.stateColor[.normal]
   }
 
-  //MARK: - Public Methods
+  // MARK: - Public Methods
 
   /// Sets the background color for a given state.
   ///

@@ -15,7 +15,8 @@ public extension UIColor {
     return UIColor(red: red, green: green, blue: blue, alpha: 1)
   }
 
-  /// Initializes and returns a random color object using the specified opacity and RGB component values in the Display P3 color space.
+  /// Initializes and returns a random color object using the specified opacity and
+  /// RGB component values in the Display P3 color space.
   static var p3Random: UIColor {
     let red = CGFloat.random(in: 0...1)
     let green = CGFloat.random(in: 0...1)
