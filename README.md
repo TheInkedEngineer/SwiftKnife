@@ -2,7 +2,7 @@
 
 `SwiftKnife` is a collection of extension, classes, structs and UI elements to help you code faster.
 
-![Documentation](https://theinkedengineer.github.io/SwiftKnife/docs/1.x/badge.svg)
+![Documentation](https://theinkedengineer.github.io/SwiftKnife/docs/2.x/badge.svg)
 ![PodVersion](https://img.shields.io/cocoapods/v/SwiftKnife.svg)
 ![SwiftLang badge](https://img.shields.io/badge/language-Swift%205.0-orange.svg)
 ![Platform](https://img.shields.io/cocoapods/p/SwiftKnife.svg)
