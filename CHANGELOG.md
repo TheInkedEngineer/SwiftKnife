@@ -16,6 +16,6 @@ All relative changes will be documented in this file. \
 ***
 
 ## 2.0.0
-### July 18, 2019
+### July 18, 2019
 
 * Initial release
