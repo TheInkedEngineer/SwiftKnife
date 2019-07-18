@@ -33,6 +33,6 @@ Add the following line to your Podfile
 **Working on your first Pull Request?** You can learn how from this *free* series [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
 
 ## Generate the project
-You might notice the abscence of the `.xcodeproj` file. That is because I rely on [xcodegen](https://github.com/yonaskolb/XcodeGen) to generate the project correctly. It is a great tool to customize a project and generate it on the go.
+To generate this project locally, you need [xcodegen](https://github.com/yonaskolb/XcodeGen). It is a great tool to customize a project and generate it on the go.
 
 You can either install it manually following their steps, or just run my `setup.sh` script. It automatically installs [Homebrew](https://brew.sh) if it is missing, installs `xcodegen`, removes existing (if present) `.xcodeproj`, run `xcodegen` and moves configuratiom files to their appropriate place.
