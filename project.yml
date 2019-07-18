@@ -6,7 +6,7 @@ options:
   indentWidth: 2
   xcodeVersion: 10.2.1
   deploymentTarget:
-    iOS: "11.0"
+    iOS: "10.0"
   generateEmptyDirectories: true
   
 targets:
@@ -16,10 +16,17 @@ targets:
     attributes:
       ProvisioningStyle: Automatic
     sources: [SwiftKnife]
-    settings:
-      INFOPLIST_FILE: SwiftKnife/Resources/Info.plist
-      ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES: $(inherited)
-      CURRENT_PROJECT_VERSION: 1.0
+    info:
+      path: SwiftKnife/Resources/Info.plist
+      properties:
+        CFBundleIdentifier: "$(PRODUCT_BUNDLE_IDENTIFIER)"
+        CFBundleInfoDictionaryVersion: "6.0"
+        CFBundleExecutable: "$(EXECUTABLE_NAME)"
+        CFBundleName: "$(PRODUCT_NAME)"
+        CFBundleDevelopmentRegion: "$(DEVELOPMENT_LANGUAGE)"
+        CFBundleShortVersionString: "2.0"
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        CFBundlePackageType: "FMWK"
 
   SwiftKnifeTests:
     type: bundle.unit-test
@@ -43,17 +50,4 @@ schemes:
         targets: [SwiftKnifeTests]
       archive:
         customArchiveName: SwiftKnife_Development
-        revealArchiveInOrganizer: false
-
-  Production:
-      build:
-        targets:
-          SwiftKnife: all
-          SwiftKnifeTests: [test]
-      test:
-        gatherCoverageData: true
-        randomExecutionOrder: false
-        targets: [SwiftKnifeTests]
-      archive:
-        customArchiveName: SwiftKnife
         revealArchiveInOrganizer: false
