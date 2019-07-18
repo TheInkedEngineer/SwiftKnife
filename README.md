@@ -13,20 +13,20 @@
 [![Twitter](https://img.shields.io/twitter/url/https/theinkedgineer.svg?label=TheInkedgineer&style=social)](https://twitter.com/theinkedgineer)
 
 # 1. Requirements and Compatibility
-| Swift           | SwiftKnife      | iOS     |
-|-----------------|-----------------|---------|
-| 4.2 ... 5.0     | 1.0 ... 1.2.x   | 10+     |
+| Swift               | SwiftKnife     |  iOS     |
+|-----------------|----------------|---------|
+|       5.0            | 2.x                |  10+     |
 
 # 2. Installation
 
 ## Cocoapods
 
 Add the following line to your Podfile
-` pod 'SwiftKnife' ~> '1.2' `
+` pod 'SwiftKnife' ~> '2.0' `
 
 
 # 3. Documentation
-`SwiftKnife` is fully documented. Checkout the documentation [**here**](https://theinkedengineer.github.io/SwiftKnife/docs/1.x/index.html).
+`SwiftKnife` is fully documented. Checkout the documentation [**here**](https://theinkedengineer.github.io/SwiftKnife/docs/2.x/index.html).
 
 # 4. Contribution
 
