@@ -10,7 +10,7 @@ import UIKit
 /// `SKTextButton` is a subclass of `UIButton` that has no background and only a centered text.
 open class SKTextButton: UIButton {
   
-  // MARK: - properties
+  // MARK: - Properties
 
   /// A dictionary containing different opacities for various states.
   private var opacities: [UIControl.State: CGFloat] = [
@@ -48,7 +48,7 @@ open class SKTextButton: UIButton {
     self.setup()
   }
 
-  /// `init` via Ib.
+  /// `init` via IB.
   public required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
     self.setup()

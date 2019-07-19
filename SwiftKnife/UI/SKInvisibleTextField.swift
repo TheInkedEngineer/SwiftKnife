@@ -26,6 +26,8 @@ public class SKInvisibleTextField: UITextField {
     self.style()
   }
 
+  // MARK: - S
+  
   private func style() {
     self.backgroundColor = .clear
     self.textColor = .clear

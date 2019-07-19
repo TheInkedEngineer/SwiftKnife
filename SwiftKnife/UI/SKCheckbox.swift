@@ -9,7 +9,7 @@ import UIKit
 /// An image based checkbox.
 open class SKCheckbox: UIControl {
 
-  // MARK: - properties
+  // MARK: - Properties
 
   /// The currently displayed checkbox Image.
   private var checkboxImage = UIImageView()

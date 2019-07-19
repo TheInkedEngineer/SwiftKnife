@@ -9,7 +9,7 @@ import Foundation
 /// `SKButton` is a subclass of `UIButton` that enables setting different background color for different states.
 open class SKButton: UIButton {
 
-  // MARK: - properties
+  // MARK: - Properties
   
   /// A dictionary containing all available colors for various states.
   private var stateColor: [UIControl.State: UIColor] = [

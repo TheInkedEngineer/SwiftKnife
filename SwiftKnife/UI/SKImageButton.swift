@@ -10,7 +10,7 @@ import UIKit
 /// `SKImageButton` is s subclass of `UIButton` where different states have the same image with a different customizable opacity.
 open class SKImageButton: UIButton {
 
-  // MARK: - properties
+  // MARK: - Properties
 
   /// A dictionary containing different opacities for various states.
   private var opacities: [UIControl.State: CGFloat] = [
