@@ -1,4 +1,4 @@
-![logo](https://theinkedengineer.github.io/SwiftKnife/SwiftKnife-logo.png)
+![logo](https://theinkedengineer.github.io/SwiftKnife/SwiftKnife-logo-small.png)
 
 # SwiftKnife
 
