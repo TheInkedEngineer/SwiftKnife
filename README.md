@@ -1,4 +1,6 @@
-![logo](SwiftKnife-logo-small.png)
+<p align="center">
+<img src="SwiftKnife-logo-small.png" alt="SwiftKnife logo">
+</p>
 
 # SwiftKnife
 
