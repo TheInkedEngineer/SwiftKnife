@@ -1,3 +1,5 @@
+![logo](https://theinkedengineer.github.io/SwiftKnife/SwiftKnife-logo.png)
+
 # SwiftKnife
 
 `SwiftKnife` is a collection of extension, classes, structs and UI elements to help you code faster.
