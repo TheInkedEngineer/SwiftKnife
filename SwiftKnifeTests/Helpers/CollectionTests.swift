@@ -22,9 +22,11 @@ class CollectionTests: XCTestCase {
 
   func testSafePositiveSubscriptSuccessful() {
     let dict = ["one", "two"]
-    let element = dict[safe: 1]
+    let element0 = dict[safe: 0]
+    let element1 = dict[safe: 1]
 
-    XCTAssertEqual(element, "two")
+    XCTAssertEqual(element0, "one")
+    XCTAssertEqual(element1, "two")
   }
 
   func testSafePositiveSubscriptReturnsNil() {
