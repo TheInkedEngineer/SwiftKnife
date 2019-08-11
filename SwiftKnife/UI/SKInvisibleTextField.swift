@@ -38,10 +38,10 @@ public class SKInvisibleTextField: UITextField {
 
   override public func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
     guard
-      action != #selector(copy(_:)) &&
-      action != #selector(cut(_:)) &&
-      action != #selector(selectAll(_:)) &&
-      action != #selector(select(_:)) &&
+      action != #selector(copy(_:)),
+      action != #selector(cut(_:)),
+      action != #selector(selectAll(_:)),
+      action != #selector(select(_:)),
       action != #selector(paste(_:))
     else {
       return false
