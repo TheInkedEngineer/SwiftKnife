@@ -37,7 +37,7 @@ public extension String {
   
   /// The string contains at least one lowecase character.
   var containsLowercase: Bool {
-    return !isDigits && !isUppercased
+    !isDigits && !isUppercased
   }
   
   /// Checks if a string is made of only uppercase charaters.
@@ -48,7 +48,7 @@ public extension String {
   
   /// The string contains at least one uppercase character.
   var containsUppercase: Bool {
-    return !isDigits && !isLowercased
+    !isDigits && !isLowercased
   }
   
   // MARK:- Functions
@@ -58,7 +58,7 @@ public extension String {
   /// - Parameter length: The desired length of the string.
   /// - Returns: A string long as the desired length made of random digits.
   static func randomDigits(length: Int) -> String {
-    return String.random(length: length, includeLowercaseLetters: false, includeCapitalLetters: false, includeDigits: true)
+    String.random(length: length, includeLowercaseLetters: false, includeCapitalLetters: false, includeDigits: true)
   }
   
   /// Returns a string

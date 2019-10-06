@@ -83,7 +83,7 @@ open class SKImageButton: UIButton {
   /// - Parameter state: The button state.
   /// - Returns: The opacity of that state if assigned, otherwise nil.
   public func getOpacity(for state: UIControl.State) -> CGFloat? {
-    return self.opacities[state]
+    self.opacities[state]
   }
 
   /// The opacity of a given state. This does not reflect the opacity assigned to that state,
@@ -92,7 +92,7 @@ open class SKImageButton: UIButton {
   /// - Parameter state: The state of the button.
   /// - Returns: The opacity that will appear given that state.
   public func opacity(for state: UIControl.State) -> CGFloat {
-    return self.opacities[state] ?? self.opacities[.normal]! // safe to force unwrap because `.normal` is assigned by default.
+    self.opacities[state] ?? self.opacities[.normal]! // safe to force unwrap because `.normal` is assigned by default.
   }
 }
 

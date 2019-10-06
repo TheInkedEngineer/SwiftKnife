@@ -51,7 +51,7 @@ public class SKInvisibleTextField: UITextField {
   }
   
   override public func selectionRects(for range: UITextRange) -> [UITextSelectionRect] {
-    return []
+    []
   }
 
   /// Delete a character from the displayed text.

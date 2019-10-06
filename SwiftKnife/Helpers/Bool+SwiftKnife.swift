@@ -16,6 +16,6 @@ public extension Bool {
 
   /// Transforms `self` into a `CGFloat` value.
   var cgFloat: CGFloat {
-    return self ? 1.0 : 0.0
+    self ? 1.0 : 0.0
   }
 }

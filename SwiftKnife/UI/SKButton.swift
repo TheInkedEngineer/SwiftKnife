@@ -79,7 +79,7 @@ open class SKButton: UIButton {
   /// - Parameter state: The state of which the color should be retrieved.
   /// - Returns: The color assigned to the state if found, otherwise nil.
   public func getColor(for state: UIControl.State) -> UIColor? {
-    return self.stateColor[state]
+    self.stateColor[state]
   }
 
   /// The color of a given state. This does not reflect the color assigned to that state,
@@ -88,6 +88,6 @@ open class SKButton: UIButton {
   /// - Parameter state: The state of which the color should be retrieved.
   /// - Returns: The color that will appear given that state.
   public func color(for state: UIControl.State) -> UIColor {
-    return self.stateColor[state] ?? self.stateColor[.normal]! // safe to force unwrap because `.normal` is assigned by default.
+    self.stateColor[state] ?? self.stateColor[.normal]! // safe to force unwrap because `.normal` is assigned by default.
   }
 }
