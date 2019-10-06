@@ -6,7 +6,7 @@
 
 `SwiftKnife` is a collection of extension, classes, structs and UI elements to help you code faster.
 
-![Documentation](https://theinkedengineer.github.io/SwiftKnife/docs/2.x/badge.svg)
+![Documentation](https://theinkedengineer.github.io/SwiftKnife/docs/3.x/badge.svg)
 ![PodVersion](https://img.shields.io/cocoapods/v/SwiftKnife.svg)
 ![SwiftLang badge](https://img.shields.io/badge/language-Swift%205.0-orange.svg)
 ![Platform](https://img.shields.io/cocoapods/p/SwiftKnife.svg)
@@ -20,17 +20,19 @@
 | Swift               | SwiftKnife     |  iOS     |
 |-----------------|----------------|---------|
 |       5.0            | 2.x                |  10+     |
+|-----------------|----------------|---------|
+|       5.1            | 3.x                |  10+     |
 
 # 2. Installation
 
 ## Cocoapods
 
 Add the following line to your Podfile
-` pod 'SwiftKnife' ~> '2.0' `
+` pod 'SwiftKnife' ~> '3.0' `
 
 
 # 3. Documentation
-`SwiftKnife` is fully documented. Checkout the documentation [**here**](https://theinkedengineer.github.io/SwiftKnife/docs/2.x/index.html).
+`SwiftKnife` is fully documented. Checkout the documentation [**here**](https://theinkedengineer.github.io/SwiftKnife/docs/3.x/index.html).
 
 # 4. Contribution
 
