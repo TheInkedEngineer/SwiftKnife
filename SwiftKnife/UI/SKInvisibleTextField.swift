@@ -49,6 +49,10 @@ public class SKInvisibleTextField: UITextField {
 
     return super.canPerformAction(action, withSender: sender)
   }
+  
+  override public func selectionRects(for range: UITextRange) -> [UITextSelectionRect] {
+    []
+  }
 
   /// Delete a character from the displayed text.
   /// Invokes the delegate even when textField is empty and the delete button is pressed.

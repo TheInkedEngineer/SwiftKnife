@@ -12,7 +12,7 @@ public extension Date {
 
   /// Checks if the date corresponds to today, regardless of the time.
   var isToday: Bool {
-    return Calendar.current.isDate(self, inSameDayAs: Date())
+    Calendar.current.isDate(self, inSameDayAs: Date())
   }
 
   /// Checks if the date is from the past.
@@ -23,7 +23,7 @@ public extension Date {
 
   /// Checks if the date is from the future.
   var isDayFromFuture: Bool {
-    return !self.isToday && !self.isDayFromPast
+    !self.isToday && !self.isDayFromPast
   }
 
   /// Returns the date as a day number (ie: 28).

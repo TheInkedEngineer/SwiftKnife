@@ -20,6 +20,6 @@ public extension Collection {
 
   /// The opposite of `isEmpty`.
   var isNotEmpty: Bool {
-    return !isEmpty
+    !isEmpty
   }
 }

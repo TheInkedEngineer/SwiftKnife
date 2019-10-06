@@ -25,6 +25,14 @@ class StringTests: XCTestCase {
   func testIsDigitsFailure() {
     XCTAssertFalse("1234d".isDigits)
   }
+  
+  func testContainsDigitsSuccessful() {
+    XCTAssertTrue("1ad2".containsDigit)
+  }
+  
+  func testContainsDigitsFailure() {
+    XCTAssertFalse("abc".containsDigit)
+  }
 
   func testIsLowercasedSuccessful() {
     XCTAssertTrue("abc".isLowercased)

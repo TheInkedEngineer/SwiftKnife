@@ -4,6 +4,9 @@ All relative changes will be documented in this file. \
 `SwiftKnife` adheres to [Semantic Versioning](https://semver.org).
 
 ***
+### 3.X Releases
+
+- `3.0.x` Releases - [3.0.0](#300)
 
 ### 2.X Releases
 
@@ -14,6 +17,14 @@ All relative changes will be documented in this file. \
 **DEPRECATED**
 
 ***
+
+## 3.0.0
+### October 6, 2019
+
+* add support for new iOS devices
+* add `clear()` functiont to string to set its content to empty string
+* add two `UITextField` helper functions: `selectedNSRange` and `setCursonFromStart`
+* removed `return` from one line functions
 
 ## 2.0.0
 ### July 18, 2019

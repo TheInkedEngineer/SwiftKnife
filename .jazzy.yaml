@@ -5,7 +5,7 @@ readme: README.md
 module: SwiftKnife
 github_url: https://github.com/TheInkedEngineer/
 github_file_prefix: https://github.com/TheInkedEngineer/blob/master
-module_version: 2.0
+module_version: 3.0
 xcodebuild_arguments: [clean,build,-scheme,Developement]
-output: docs/2.x
+output: docs/3.x
 
