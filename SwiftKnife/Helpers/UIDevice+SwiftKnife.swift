@@ -79,10 +79,13 @@ public extension UIDevice {
     /// the platform is an iPhoneXR.
     case iPhoneXR = "iPhoneXR"
     
+    /// the platform is an iPhone11.
     case iPhone11 = "iPhone11"
     
+    /// the platform is an iPhone11Pro.
     case iPhone11Pro = "iPhone11Pro"
     
+    /// the platform is an iPhone11ProMax.
     case iPhone11ProMax = "iPhone11ProMax"
     
     // MARK: iPod

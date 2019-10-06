@@ -50,6 +50,7 @@ public class SKInvisibleTextField: UITextField {
     return super.canPerformAction(action, withSender: sender)
   }
   
+  /// Returns an array of UITextSelectionRects. Override makes that seclection Empty.
   override public func selectionRects(for range: UITextRange) -> [UITextSelectionRect] {
     []
   }
