@@ -2,30 +2,16 @@
   "warnings": [
     {
       "file": "/Users/theinkedengineer/Code/SwiftKnife/SwiftKnife/Helpers/UIDevice+SwiftKnife.swift",
-      "line": 82,
-      "symbol": "UIDevice.PlatformName.iPhone11",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "line": 186,
+      "symbol": "UIDevice.Device",
+      "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/theinkedengineer/Code/SwiftKnife/SwiftKnife/Helpers/UIDevice+SwiftKnife.swift",
-      "line": 84,
-      "symbol": "UIDevice.PlatformName.iPhone11Pro",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/theinkedengineer/Code/SwiftKnife/SwiftKnife/Helpers/UIDevice+SwiftKnife.swift",
-      "line": 86,
-      "symbol": "UIDevice.PlatformName.iPhone11ProMax",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/theinkedengineer/Code/SwiftKnife/SwiftKnife/UI/SKInvisibleTextField.swift",
-      "line": 53,
-      "symbol": "SKInvisibleTextField.selectionRects(for:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "line": 582,
+      "symbol": "UIDevice.device",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     }
   ],
