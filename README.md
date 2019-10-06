@@ -8,7 +8,7 @@
 
 ![Documentation](https://theinkedengineer.github.io/SwiftKnife/docs/3.x/badge.svg)
 ![PodVersion](https://img.shields.io/cocoapods/v/SwiftKnife.svg)
-![SwiftLang badge](https://img.shields.io/badge/language-Swift%205.0-orange.svg)
+![SwiftLang badge](https://img.shields.io/badge/language-Swift%205.1-orange.svg)
 ![Platform](https://img.shields.io/cocoapods/p/SwiftKnife.svg)
 
 [![codebeat badge](https://codebeat.co/badges/93a3c652-416d-40fc-835e-3d53b945e1d1)](https://codebeat.co/projects/github-com-theinkedengineer-swiftknife-master)
