@@ -6,6 +6,7 @@ All relative changes will be documented in this file. \
 ***
 ### 3.X Releases
 
+- `3.1.x` Releases - [3.1.0](#310)
 - `3.0.x` Releases - [3.0.0](#300)
 
 ### 2.X Releases
@@ -17,6 +18,13 @@ All relative changes will be documented in this file. \
 **DEPRECATED**
 
 ***
+
+## 3.1.0
+### October 7, 2019
+
+* renamed `PlatformName` to `Device`
+* renamed `platformName` to `device`
+* renamed `platform` to `hardwareString`
 
 ## 3.0.0
 ### October 6, 2019
