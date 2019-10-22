@@ -11,8 +11,16 @@ open class SKButton: UIButton {
 
   // MARK: - Properties
   
+    /// A dictionary containing all available Opacity for various states.
+  private var opacity: [UIControl.State: CGFloat] = [
+    UIControl.State.normal: 1.0,
+    UIControl.State.selected: 1.0,
+    UIControl.State.highlighted: 0.7,
+    UIControl.State.disabled: 0.5
+  ]
+  
   /// A dictionary containing all available colors for various states.
-  private var stateColor: [UIControl.State: UIColor] = [
+  private var color: [UIControl.State: UIColor] = [
     UIControl.State.normal: UIColor.clear
   ]
 
@@ -49,7 +57,7 @@ open class SKButton: UIButton {
 
   /// Sets up the default style of the button at startup.
   private func style() {
-    self.backgroundColor = self.stateColor[.normal]
+    self.backgroundColor = self.color[.normal]
   }
 
   /// Called when relative button criteria changes so it reflects such changes.
@@ -59,7 +67,7 @@ open class SKButton: UIButton {
 
   /// Updates the background color.
   private func updateBackgrounColor() {
-    self.backgroundColor = self.stateColor[self.state] ?? self.stateColor[.normal]
+    self.backgroundColor = self.color[self.state] ?? self.color[.normal]
   }
 
   // MARK: - Public Methods
@@ -70,7 +78,7 @@ open class SKButton: UIButton {
   ///   - color: The color to assign.
   ///   - state: The state to which the color should be assigned.
   public func setColor(_ color: UIColor, for state: UIControl.State) {
-    self.stateColor[state] = color
+    self.color[state] = color
     self.update()
   }
 
@@ -79,7 +87,7 @@ open class SKButton: UIButton {
   /// - Parameter state: The state of which the color should be retrieved.
   /// - Returns: The color assigned to the state if found, otherwise nil.
   public func getColor(for state: UIControl.State) -> UIColor? {
-    self.stateColor[state]
+    self.color[state]
   }
 
   /// The color of a given state. This does not reflect the color assigned to that state,
@@ -88,6 +96,35 @@ open class SKButton: UIButton {
   /// - Parameter state: The state of which the color should be retrieved.
   /// - Returns: The color that will appear given that state.
   public func color(for state: UIControl.State) -> UIColor {
-    self.stateColor[state] ?? self.stateColor[.normal]! // safe to force unwrap because `.normal` is assigned by default.
+    self.color[state] ?? self.color[.normal]! // safe to force unwrap because `.normal` is assigned by default.
+  }
+  
+  // MARK: - Public Methods
+
+  /// Sets the title opacity of a given state.
+  ///
+  /// - Parameters:
+  ///   - opacity: The desired opacity.
+  ///   - state: The button state to modify.
+  public func setOpacity(_ opacity: CGFloat, for state: UIControl.State) {
+    self.opacity[state] = opacity
+    self.update()
+  }
+
+  /// Checks the title opacity of a given state.
+  ///
+  /// - Parameter state: The button state.
+  /// - Returns: The opacity of that state if assigned, otherwise nil.
+  public func getOpacity(for state: UIControl.State) -> CGFloat? {
+    self.opacity[state]
+  }
+
+  /// The title opacity of a given state. This does not reflect the opacity assigned to that state,
+  /// but rather the opacity that will show up, since if no opacity is assigned it fallsback to `.normal` state.
+  ///
+  /// - Parameter state: The state of the button.
+  /// - Returns: The opacity that will appear given that state.
+  public func opacity(for state: UIControl.State) -> CGFloat {
+    self.opacity[state] ?? self.opacity[.normal]! // safe to force unwrap because `.normal` is assigned by default.
   }
 }

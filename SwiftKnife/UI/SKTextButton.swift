@@ -13,7 +13,7 @@ open class SKTextButton: UIButton {
   // MARK: - Properties
 
   /// A dictionary containing different opacities for various states.
-  private var opacities: [UIControl.State: CGFloat] = [
+  private var opacity: [UIControl.State: CGFloat] = [
     UIControl.State.normal: 1.0,
     UIControl.State.selected: 1.0,
     UIControl.State.highlighted: 0.7,
@@ -62,7 +62,7 @@ open class SKTextButton: UIButton {
 
   private func update() {
     self.setAttributedTitle(self.attributedTitle, for: .normal)
-    self.titleLabel?.alpha = self.opacities[self.state] ?? 1.0
+    self.titleLabel?.alpha = self.opacity[self.state] ?? 1.0
   }
 
   // MARK: - Public Methods
@@ -73,7 +73,7 @@ open class SKTextButton: UIButton {
   ///   - opacity: The desired opacity.
   ///   - state: The button state to modify.
   public func setOpacity(_ opacity: CGFloat, for state: UIControl.State) {
-    self.opacities[state] = opacity
+    self.opacity[state] = opacity
     self.update()
   }
 
@@ -82,7 +82,7 @@ open class SKTextButton: UIButton {
   /// - Parameter state: The button state.
   /// - Returns: The opacity of that state if assigned, otherwise nil.
   public func getOpacity(for state: UIControl.State) -> CGFloat? {
-    self.opacities[state]
+    self.opacity[state]
   }
 
   /// The title opacity of a given state. This does not reflect the opacity assigned to that state,
@@ -91,6 +91,6 @@ open class SKTextButton: UIButton {
   /// - Parameter state: The state of the button.
   /// - Returns: The opacity that will appear given that state.
   public func opacity(for state: UIControl.State) -> CGFloat {
-    self.opacities[state] ?? self.opacities[.normal]! // safe to force unwrap because `.normal` is assigned by default.
+    self.opacity[state] ?? self.opacity[.normal]! // safe to force unwrap because `.normal` is assigned by default.
   }
 }

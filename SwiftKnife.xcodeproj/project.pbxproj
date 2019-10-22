@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,7 @@
 		3B08C65D9840C770D24A74BAFEB27050 /* Date+SwiftKnife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA01A2D32E7603CF579290926F23DA7 /* Date+SwiftKnife.swift */; };
 		3C33AA7585AEEE49F3D0886D62D4D47E /* SKFatalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E9845E7075FDE531A0335D07F8A205 /* SKFatalError.swift */; };
 		424C533A67DEEC9CB5434B81A58EAE75 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9D1E842BDEF3473424120F022DC3FC /* Typealiases.swift */; };
+		63C0B95FAD027C830E54D5DF09730B10 /* UITextField+SwiftKnife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E1885907EBB32AD184B356771223BD /* UITextField+SwiftKnife.swift */; };
 		7261F17BE9A75F5226A8710CA303A135 /* SwiftKnife.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4A2CF9914775308D90A66371E67B67B /* SwiftKnife.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		76EFAF51E7C7839C780B47523C22E990 /* String+SwiftKnife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC118B903A7165485DD2B0DA41393F9 /* String+SwiftKnife.swift */; };
 		7759A59209EF3535A6E7E308B9814642 /* BoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE08B0ECEF1CEAC38276043731BF719 /* BoolTests.swift */; };
@@ -36,7 +37,6 @@
 		C7EC7C465E7210EED6452C592ABC4D7F /* UIScreen+SwiftKnife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2140EEF0641810BD84D6336F9CE7F444 /* UIScreen+SwiftKnife.swift */; };
 		D18D5EFCFA4957F1F4479B1BA63ABB4E /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73A8ADF0B129BBE187DF8FDF5A27C47 /* StringTests.swift */; };
 		D20758C32084888EBF239A87DE8DA1B7 /* Encodable+SwiftKnife.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB10F05C367CC0B96FE56DBE9C00C595 /* Encodable+SwiftKnife.swift */; };
-		D2F6A87D233F72E900B73FF7 /* UITextField+SwiftKnife.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F6A87C233F72E900B73FF7 /* UITextField+SwiftKnife.swift */; };
 		D90D6FA5A58F3B186F77863A74CB36B3 /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB082AA404953E67EB34FFD2475E3F2C /* Thread.swift */; };
 		F10B1635FFA4E4E78BCEAE54A96841F1 /* SKImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FF551BBAA8BB1B7C0F5D0A23EC7CA /* SKImageButton.swift */; };
 /* End PBXBuildFile section */
@@ -77,6 +77,7 @@
 		4FE08B0ECEF1CEAC38276043731BF719 /* BoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolTests.swift; sourceTree = "<group>"; };
 		67266A5CA74A0061B57877F5CAAE2BBD /* SKCheckbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKCheckbox.swift; sourceTree = "<group>"; };
 		6E9983A81EE788B0D86903C79E0DC30A /* SwiftKnifeTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SwiftKnifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		90E1885907EBB32AD184B356771223BD /* UITextField+SwiftKnife.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SwiftKnife.swift"; sourceTree = "<group>"; };
 		90E9845E7075FDE531A0335D07F8A205 /* SKFatalError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKFatalError.swift; sourceTree = "<group>"; };
 		9735123E9406B184A1628F1D9DB97509 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
 		A2E68C464628286F8B0294E210F2BBEF /* Bool+SwiftKnife.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+SwiftKnife.swift"; sourceTree = "<group>"; };
@@ -89,7 +90,6 @@
 		C6A787761853784185708B79429EE3EC /* StringSubscript+SwiftKnife.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringSubscript+SwiftKnife.swift"; sourceTree = "<group>"; };
 		C88B1E5F21C85D90658FAA30168B4454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB10F05C367CC0B96FE56DBE9C00C595 /* Encodable+SwiftKnife.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+SwiftKnife.swift"; sourceTree = "<group>"; };
-		D2F6A87C233F72E900B73FF7 /* UITextField+SwiftKnife.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SwiftKnife.swift"; sourceTree = "<group>"; };
 		D404548DBA6B0CD12ADF1B85CB20428C /* UIDevice+SwiftKnife.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+SwiftKnife.swift"; sourceTree = "<group>"; };
 		D7A968720223630A5B3E4C97CEF5144C /* SKInvisibleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKInvisibleTextField.swift; sourceTree = "<group>"; };
 		D93FF551BBAA8BB1B7C0F5D0A23EC7CA /* SKImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKImageButton.swift; sourceTree = "<group>"; };
@@ -212,9 +212,9 @@
 				4B3B18C095B04482E671102268BF3474 /* UIControl+SwiftKnife.swift */,
 				D404548DBA6B0CD12ADF1B85CB20428C /* UIDevice+SwiftKnife.swift */,
 				2140EEF0641810BD84D6336F9CE7F444 /* UIScreen+SwiftKnife.swift */,
+				90E1885907EBB32AD184B356771223BD /* UITextField+SwiftKnife.swift */,
 				DF9900345494EF04F78BF16ADBB46D2E /* UIView+SwiftKnife.swift */,
 				E90BC7D42ABC2A40E38C73D4E58F86F9 /* URLSession+SwiftKnife.swift */,
-				D2F6A87C233F72E900B73FF7 /* UITextField+SwiftKnife.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -319,7 +319,6 @@
 				2BD0A3EAFD8CD780D8F02A85ECAC112E /* Bool+SwiftKnife.swift in Sources */,
 				15D4DFF54423B1E51630E449197049A3 /* Collection+SwiftKnife.swift in Sources */,
 				3B08C65D9840C770D24A74BAFEB27050 /* Date+SwiftKnife.swift in Sources */,
-				D2F6A87D233F72E900B73FF7 /* UITextField+SwiftKnife.swift in Sources */,
 				D20758C32084888EBF239A87DE8DA1B7 /* Encodable+SwiftKnife.swift in Sources */,
 				1900025CFEA16053C46D2148F42C23F4 /* SKButton.swift in Sources */,
 				02D15275FD133FB56E0722096F226EF5 /* SKCheckbox.swift in Sources */,
@@ -336,6 +335,7 @@
 				091E98941163F94A0157EC0390DF73D8 /* UIControl+SwiftKnife.swift in Sources */,
 				13D76FB47FF48E4B32F8BFDFB9E52707 /* UIDevice+SwiftKnife.swift in Sources */,
 				C7EC7C465E7210EED6452C592ABC4D7F /* UIScreen+SwiftKnife.swift in Sources */,
+				63C0B95FAD027C830E54D5DF09730B10 /* UITextField+SwiftKnife.swift in Sources */,
 				8ABDB1204BCA91FE52C550FE27CAC932 /* UIView+SwiftKnife.swift in Sources */,
 				15B5745B29174E1725C4C8629E5753B2 /* URLSession+SwiftKnife.swift in Sources */,
 			);
@@ -363,10 +363,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftKnife/Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theInkedEngineer.SwiftKnife;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -498,10 +495,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftKnife/Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theInkedEngineer.SwiftKnife;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -515,11 +509,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SwiftKnifeTests/Resources/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theInkedEngineer.SwiftKnifeTests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -531,11 +521,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SwiftKnifeTests/Resources/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theInkedEngineer.SwiftKnifeTests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
