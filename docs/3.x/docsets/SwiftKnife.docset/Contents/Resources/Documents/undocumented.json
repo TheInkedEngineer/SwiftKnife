@@ -1,19 +1,6 @@
 {
   "warnings": [
-    {
-      "file": "/Users/theinkedengineer/Code/SwiftKnife/SwiftKnife/Helpers/UIDevice+SwiftKnife.swift",
-      "line": 186,
-      "symbol": "UIDevice.Device",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/theinkedengineer/Code/SwiftKnife/SwiftKnife/Helpers/UIDevice+SwiftKnife.swift",
-      "line": 582,
-      "symbol": "UIDevice.device",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    }
+
   ],
   "source_directory": "/Users/theinkedengineer/Code/SwiftKnife"
 }
