@@ -27,7 +27,7 @@
 ## Cocoapods
 
 Add the following line to your Podfile
-` pod 'SwiftKnife' ~> '3.1' `
+` pod 'SwiftKnife' ~> '3.2' `
 
 
 # 3. Documentation
