@@ -103,3 +103,28 @@ public extension UIColor {
     )
   }
 }
+
+public extension UIColor {
+  
+  /// Initializes a UIColor from an array of CGFloat components if possible, otherwise returns nil.
+  /// - Parameter components: The components making up the UIColor. Either [red, green, blue] or [red, green, blue, alpha].
+  convenience init?(components: [CGFloat]?) {
+    guard
+      let components = components,
+      (components.count == 3 || components.count == 4),
+      let red = components[safe: 0],
+      let green = components[safe: 1],
+      let blue = components[safe: 2]
+    
+      else {
+        return nil
+    }
+    
+    self.init(
+      displayP3Red: red,
+      green: green,
+      blue: blue,
+      alpha: components[safe: 3] ?? 1
+    )
+  }
+}
