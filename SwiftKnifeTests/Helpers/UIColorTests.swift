@@ -94,6 +94,5 @@ class UIColorExtensionTests: XCTestCase {
     let color = UIColor(components: components)
     XCTAssertNil(color)
   }
-  
 }
 

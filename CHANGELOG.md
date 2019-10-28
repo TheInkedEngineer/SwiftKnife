@@ -6,7 +6,8 @@ All relative changes will be documented in this file. \
 ***
 ### 3.X Releases
 
-- `3.2.x` Releases - [3.1.0](#320)
+- `3.3.x` Releases - [3.3.0](#330)
+- `3.2.x` Releases - [3.2.0](#320)
 - `3.1.x` Releases - [3.1.0](#310)
 - `3.0.x` Releases - [3.0.0](#300)
 
@@ -19,6 +20,12 @@ All relative changes will be documented in this file. \
 **DEPRECATED**
 
 ***
+
+## 3.3.0
+### October 28, 2019
+
+* add `UIColor` initializer from `CGFloat` array
+* add `backgroundHorizontalGradientColor`, `backgroundVerticalGradientColor` and `backgroundGradientColor`
 
 ## 3.2.0
 ### October 22, 2019
