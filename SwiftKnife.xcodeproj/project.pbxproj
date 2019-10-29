@@ -37,9 +37,10 @@
 		C7EC7C465E7210EED6452C592ABC4D7F /* UIScreen+SwiftKnife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2140EEF0641810BD84D6336F9CE7F444 /* UIScreen+SwiftKnife.swift */; };
 		D18D5EFCFA4957F1F4479B1BA63ABB4E /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73A8ADF0B129BBE187DF8FDF5A27C47 /* StringTests.swift */; };
 		D20758C32084888EBF239A87DE8DA1B7 /* Encodable+SwiftKnife.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB10F05C367CC0B96FE56DBE9C00C595 /* Encodable+SwiftKnife.swift */; };
-		D226019B2366B36A0031294F /* UIColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226019A2366B36A0031294F /* UIColorTests.swift */; };
+		D29A87EE2368CDD100194563 /* NSLayoutConstraint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29A87ED2368CDD100194563 /* NSLayoutConstraint+Extension.swift */; };
 		D90D6FA5A58F3B186F77863A74CB36B3 /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB082AA404953E67EB34FFD2475E3F2C /* Thread.swift */; };
 		F10B1635FFA4E4E78BCEAE54A96841F1 /* SKImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FF551BBAA8BB1B7C0F5D0A23EC7CA /* SKImageButton.swift */; };
+		FEC1B926717ACCA980785753D28C3818 /* UIColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8241D8C6C431B8C8E6BFB7B9477136 /* UIColorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 
 /* Begin PBXFileReference section */
 		0C7BCF734E301091A15E6B21F647B5D5 /* SwiftKnife.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftKnife.h; sourceTree = "<group>"; };
+		1A8241D8C6C431B8C8E6BFB7B9477136 /* UIColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTests.swift; sourceTree = "<group>"; };
 		1F5AFEF452FBFC9A26F00983DB54522B /* SKButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKButton.swift; sourceTree = "<group>"; };
 		2140EEF0641810BD84D6336F9CE7F444 /* UIScreen+SwiftKnife.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+SwiftKnife.swift"; sourceTree = "<group>"; };
 		2B9D1E842BDEF3473424120F022DC3FC /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
@@ -91,7 +93,7 @@
 		C6A787761853784185708B79429EE3EC /* StringSubscript+SwiftKnife.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringSubscript+SwiftKnife.swift"; sourceTree = "<group>"; };
 		C88B1E5F21C85D90658FAA30168B4454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB10F05C367CC0B96FE56DBE9C00C595 /* Encodable+SwiftKnife.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+SwiftKnife.swift"; sourceTree = "<group>"; };
-		D226019A2366B36A0031294F /* UIColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTests.swift; sourceTree = "<group>"; };
+		D29A87ED2368CDD100194563 /* NSLayoutConstraint+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Extension.swift"; sourceTree = "<group>"; };
 		D404548DBA6B0CD12ADF1B85CB20428C /* UIDevice+SwiftKnife.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+SwiftKnife.swift"; sourceTree = "<group>"; };
 		D7A968720223630A5B3E4C97CEF5144C /* SKInvisibleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKInvisibleTextField.swift; sourceTree = "<group>"; };
 		D93FF551BBAA8BB1B7C0F5D0A23EC7CA /* SKImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKImageButton.swift; sourceTree = "<group>"; };
@@ -142,8 +144,8 @@
 				F26A75F4AE31FB6AD8BC9B63906C59BC /* EncodableTests.swift */,
 				E73A8ADF0B129BBE187DF8FDF5A27C47 /* StringTests.swift */,
 				BFA88E0BD3869CD1FA9219783C3DD854 /* ThreadTests.swift */,
+				1A8241D8C6C431B8C8E6BFB7B9477136 /* UIColorTests.swift */,
 				BA2E8F9DEB93D25B78E910A5696B2E5C /* UIViewTests.swift */,
-				D226019A2366B36A0031294F /* UIColorTests.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -218,6 +220,7 @@
 				90E1885907EBB32AD184B356771223BD /* UITextField+SwiftKnife.swift */,
 				DF9900345494EF04F78BF16ADBB46D2E /* UIView+SwiftKnife.swift */,
 				E90BC7D42ABC2A40E38C73D4E58F86F9 /* URLSession+SwiftKnife.swift */,
+				D29A87ED2368CDD100194563 /* NSLayoutConstraint+Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -310,8 +313,8 @@
 				24CC7635614ED527EF332E9D392E6D45 /* DateTests.swift in Sources */,
 				9336CA7569040DF7BF4485B68F222684 /* EncodableTests.swift in Sources */,
 				D18D5EFCFA4957F1F4479B1BA63ABB4E /* StringTests.swift in Sources */,
-				D226019B2366B36A0031294F /* UIColorTests.swift in Sources */,
 				3A9338A3517AF03389A66FA183AC38C9 /* ThreadTests.swift in Sources */,
+				FEC1B926717ACCA980785753D28C3818 /* UIColorTests.swift in Sources */,
 				29A159D74145A862399F1311533B9F81 /* UIViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,6 +334,7 @@
 				7B4838C0A47674DD151FAC0B4C6C9A07 /* SKInvisibleTextField.swift in Sources */,
 				92814F0BD09202F76F1FCF30581D1BAB /* SKLogger.swift in Sources */,
 				BF95AC9AFBD1E9803785D0B2A444D8C6 /* SKTextButton.swift in Sources */,
+				D29A87EE2368CDD100194563 /* NSLayoutConstraint+Extension.swift in Sources */,
 				76EFAF51E7C7839C780B47523C22E990 /* String+SwiftKnife.swift in Sources */,
 				A0CCD2224C95FE988EE3FDC1C40808D2 /* StringSubscript+SwiftKnife.swift in Sources */,
 				D90D6FA5A58F3B186F77863A74CB36B3 /* Thread.swift in Sources */,
