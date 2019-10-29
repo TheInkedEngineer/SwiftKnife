@@ -6,6 +6,7 @@ All relative changes will be documented in this file. \
 ***
 ### 3.X Releases
 
+- `3.4.x` Releases - [3.4.0](#340)
 - `3.3.x` Releases - [3.3.0](#330)
 - `3.2.x` Releases - [3.2.0](#320)
 - `3.1.x` Releases - [3.1.0](#310)
@@ -20,6 +21,12 @@ All relative changes will be documented in this file. \
 **DEPRECATED**
 
 ***
+
+## 3.4.0
+### October 29, 2019
+
+* add `activateAutoLayout` function to UIView.
+* add `activate` and `deactivate` functions to `NSLayoutConstraint`.
 
 ## 3.3.0
 ### October 28, 2019
