@@ -6,6 +6,7 @@ All relative changes will be documented in this file. \
 ***
 ### 3.X Releases
 
+- `3.5.x` Releases - [3.5.0](#350)
 - `3.4.x` Releases - [3.4.0](#340)
 - `3.3.x` Releases - [3.3.0](#330)
 - `3.2.x` Releases - [3.2.0](#320)
@@ -21,6 +22,14 @@ All relative changes will be documented in this file. \
 **DEPRECATED**
 
 ***
+
+## 3.5.0
+### December 19, 2019
+
+* add `centerH`,  `centerV` and `center` functions to UIView.
+* add `postfix %` custom operator with `func %(lhs: Double)->Double` and `func %(lhs: CGFloat)->CGFloat` 
+
+* fix a bug where opacity was not updated in `SKButton`
 
 ## 3.4.0
 ### October 29, 2019
