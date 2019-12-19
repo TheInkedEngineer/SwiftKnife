@@ -38,6 +38,8 @@
 		D18D5EFCFA4957F1F4479B1BA63ABB4E /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73A8ADF0B129BBE187DF8FDF5A27C47 /* StringTests.swift */; };
 		D20758C32084888EBF239A87DE8DA1B7 /* Encodable+SwiftKnife.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB10F05C367CC0B96FE56DBE9C00C595 /* Encodable+SwiftKnife.swift */; };
 		D29A87EE2368CDD100194563 /* NSLayoutConstraint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29A87ED2368CDD100194563 /* NSLayoutConstraint+Extension.swift */; };
+		D2CC10ED23AB65C900982928 /* CustomOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC10EC23AB65C900982928 /* CustomOperators.swift */; };
+		D2CC10EF23AB664F00982928 /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC10EE23AB664F00982928 /* UIView+AutoLayout.swift */; };
 		D90D6FA5A58F3B186F77863A74CB36B3 /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB082AA404953E67EB34FFD2475E3F2C /* Thread.swift */; };
 		F10B1635FFA4E4E78BCEAE54A96841F1 /* SKImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FF551BBAA8BB1B7C0F5D0A23EC7CA /* SKImageButton.swift */; };
 		FEC1B926717ACCA980785753D28C3818 /* UIColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8241D8C6C431B8C8E6BFB7B9477136 /* UIColorTests.swift */; };
@@ -94,6 +96,8 @@
 		C88B1E5F21C85D90658FAA30168B4454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB10F05C367CC0B96FE56DBE9C00C595 /* Encodable+SwiftKnife.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+SwiftKnife.swift"; sourceTree = "<group>"; };
 		D29A87ED2368CDD100194563 /* NSLayoutConstraint+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Extension.swift"; sourceTree = "<group>"; };
+		D2CC10EC23AB65C900982928 /* CustomOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOperators.swift; sourceTree = "<group>"; };
+		D2CC10EE23AB664F00982928 /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
 		D404548DBA6B0CD12ADF1B85CB20428C /* UIDevice+SwiftKnife.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+SwiftKnife.swift"; sourceTree = "<group>"; };
 		D7A968720223630A5B3E4C97CEF5144C /* SKInvisibleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKInvisibleTextField.swift; sourceTree = "<group>"; };
 		D93FF551BBAA8BB1B7C0F5D0A23EC7CA /* SKImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKImageButton.swift; sourceTree = "<group>"; };
@@ -221,6 +225,8 @@
 				DF9900345494EF04F78BF16ADBB46D2E /* UIView+SwiftKnife.swift */,
 				E90BC7D42ABC2A40E38C73D4E58F86F9 /* URLSession+SwiftKnife.swift */,
 				D29A87ED2368CDD100194563 /* NSLayoutConstraint+Extension.swift */,
+				D2CC10EC23AB65C900982928 /* CustomOperators.swift */,
+				D2CC10EE23AB664F00982928 /* UIView+AutoLayout.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -323,8 +329,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2CC10EF23AB664F00982928 /* UIView+AutoLayout.swift in Sources */,
 				2BD0A3EAFD8CD780D8F02A85ECAC112E /* Bool+SwiftKnife.swift in Sources */,
 				15D4DFF54423B1E51630E449197049A3 /* Collection+SwiftKnife.swift in Sources */,
+				D2CC10ED23AB65C900982928 /* CustomOperators.swift in Sources */,
 				3B08C65D9840C770D24A74BAFEB27050 /* Date+SwiftKnife.swift in Sources */,
 				D20758C32084888EBF239A87DE8DA1B7 /* Encodable+SwiftKnife.swift in Sources */,
 				1900025CFEA16053C46D2148F42C23F4 /* SKButton.swift in Sources */,

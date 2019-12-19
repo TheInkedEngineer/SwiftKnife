@@ -59,13 +59,3 @@ extension UIView {
     }
   }
 }
-
-// MARK: - Autolayout
-
-public extension UIView {
-  
-  /// Sets `translatesAutoresizingMaskIntoConstraints` to false.
-  func activateAutoLayout() {
-    self.translatesAutoresizingMaskIntoConstraints = false
-  }
-}

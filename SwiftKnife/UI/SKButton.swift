@@ -4,7 +4,7 @@
 //  Copyright © 2019 TheInkedEngineer. All rights reserved.
 // 
 
-import Foundation
+import UIKit
 
 /// `SKButton` is a subclass of `UIButton` that enables setting different background color for different states.
 open class SKButton: UIButton {
@@ -63,11 +63,17 @@ open class SKButton: UIButton {
   /// Called when relative button criteria changes so it reflects such changes.
   private func update() {
     self.updateBackgrounColor()
+    self.updateOpacity()
   }
 
   /// Updates the background color.
   private func updateBackgrounColor() {
     self.backgroundColor = self.color[self.state] ?? self.color[.normal]
+  }
+  
+  /// Updates the alpha of the element.
+  private func updateOpacity() {
+    self.alpha = self.opacity[self.state] ?? self.opacity[.normal]!
   }
 
   // MARK: - Public Methods
