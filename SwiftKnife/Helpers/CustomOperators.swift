@@ -4,7 +4,7 @@
 //  Copyright © 2019 TheInkedEngineer. All rights reserved.
 // 
 
-import Foundation
+import UIKit
 
 // MARK: - Percentage Operator
 
